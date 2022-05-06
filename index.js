@@ -68,4 +68,6 @@ program.parse(process.argv);
 
 const opts = program.opts();
 
-invokeAction(opts);
+(async () => {
+  await invokeAction(opts);
+})();
